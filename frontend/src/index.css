@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@theme {
+  --color-obsidian-950: #0f0e0d;
+  --color-obsidian-900: #181716;
+  --color-obsidian-800: #22201e;
+  --color-obsidian-700: #2e2b27;
+  --color-obsidian-600: #3e3a35;
+
+  --color-stone-50: #fbfbfa;
+  --color-stone-100: #f5f4f0;
+  --color-stone-200: #ebe9e2;
+  --color-stone-300: #dedbd1;
+  --color-stone-400: #c2bdad;
+  --color-stone-500: #8c8675;
+
+  --color-bronze-50: #f9f7f4;
+  --color-bronze-100: #f3efe6;
+  --color-bronze-200: #e4dcce;
+  --color-bronze-300: #d0c2ab;
+  --color-bronze-400: #b8a280;
+  --color-bronze-500: #997e55;
+  --color-bronze-600: #84683d;
+  --color-bronze-700: #6b522e;
+
+  --color-ivory: #faf9f6;
+  --color-warm-white: #ffffff;
+  --color-charcoal: #1c1b1a;
+
+  --font-serif: 'Playfair Display', 'Cinzel', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+:root {
+  --brand-primary: #181716;
+  --brand-accent: #997e55;
+  --bg-canvas: #faf9f6;
+  --text-main: #1c1b1a;
+  --text-muted: #6e6962;
+  --border-subtle: #e6e3da;
+}
+
+body {
+  background-color: #faf9f6;
+  color: #1c1b1a;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+/* Editorial luxury container & cards */
+.editorial-card {
+  background: #ffffff;
+  border: 1px solid #e7e4dc;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+}
+
+.editorial-card:hover {
+  border-color: #cfc9bb;
+  box-shadow: 0 12px 30px -10px rgba(24, 23, 22, 0.08);
+}
+
+.editorial-card-dark {
+  background: #181716;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #f5f4f0;
+}
+
+/* Subtle architectural borders */
+.border-subtle {
+  border-color: #e6e3da;
+}
+
+.border-subtle-dark {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Restrained bronze text & accents */
+.bronze-text {
+  color: #997e55;
+}
+
+.bronze-gradient-text {
+  background: linear-gradient(135deg, #181716 0%, #84683d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtle, purposeful transitions */
+.smooth-hover {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Architectural typography tracking */
+.tracking-architectural {
+  letter-spacing: 0.2em;
+}
+
+/* Custom Minimalist Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #faf9f6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d8d4c9;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #997e55;
+}
